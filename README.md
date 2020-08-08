@@ -1,2 +1,1 @@
-# run-buddy
-By Adaobi
+# Run Buddy Inc.
