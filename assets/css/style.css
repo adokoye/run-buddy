@@ -13,6 +13,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%; 
+    background-attachment: fixed;
   }
   
   header h1 {
@@ -39,11 +46,15 @@
     list-style: none;
   }
   
-  header nav ul li a {
+  header nav ul li a:hover {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-  }
+    background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
   
   body {
     color: #39a6b2;
@@ -79,11 +90,12 @@
     padding: 60px;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
   }
 
   .hero-cta {
@@ -110,6 +122,8 @@
     border-color: #024e76;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
   }
   
   .hero-form h3 {
@@ -129,6 +143,7 @@
       color: #024e76;
       width: 100%;
       margin-bottom: 15px;
+      border-radius: 10px;
   }
   
   .hero-form label {
@@ -137,7 +152,7 @@
   
   .hero-form button {
       color: #fce138;
-      background-color: #024e76;
+      background-color: #39a6b2;  
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -178,11 +193,11 @@
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #39a6b2;
   }
 
   .step h3 {
@@ -320,16 +335,18 @@
       width: 100%;
       margin-bottom: 15px;
       margin-top: 5px;
+      border-radius: 10px;
   }
 
-  .contact-form button {
+  .contact-form button:hover {
       width: 100%;
       border: none;
-      background: #fce138;
-      color: #024e76;
+      background: #39a6b2;
+      color: #fce138;
       text-align: center;
       padding: 15px 0;
       font-size: 16px;
+      border-radius: 10px;
   }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -337,6 +354,7 @@
     header {
       padding-bottom: 0;
       justify-content: center;
+      position: relative;
     }
   
     header h1 {
@@ -536,9 +554,32 @@
     writing-mode: vertical-lr;
   grid-column: 1;
   grid-row: 1 / -1;
-}
+  }
+
+
 
 .grid-head, .grid-price, .service-grid-item.cancel {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  header h1 {
+    /* add alongside your existing declarations */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a {
+    /* and here */
+  }
+  
+  .hero-cta h2 {
+    /* and here */
+  }
+
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+
+
+  
