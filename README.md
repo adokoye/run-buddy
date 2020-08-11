@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://github.com/adokoye/run-buddy
+https://adokoye.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Adaobi C Okoye
